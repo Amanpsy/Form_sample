@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> Demo Flex </title>
+<style>
+    body {
+        padding: 2em;
+
+    }
+.headercontainer{
+
+display: flex;
+flex-flow: column wrap;
+align-content: center;
+background: tomato;
+font-weight: bold;
+padding: 10px;
+
+
+}
+.footercontainer{
+display: flex;
+flex-flow: column wrap;
+align-content: center;
+background-color:lightgreen;
+font-weight: bold;
+padding: 10px;
+
+}
+
+.Maincontainer{
+
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+   
+}
+
+.Maincontaineritem{
+    text-align: left;
+    background: deepskyblue;
+}
+
+article{
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+
+}
+
+.sidebarleftitem {background: gold;}
+.sidebarrighttitem { background: hotpink;}
+
+.sidebaritem{ flex: 1 0 0 ; border: 0px solid green}
+.Maincontaineritem{ flex:3 0px;}
+.sidebarleftitem{order: 1;}
+.Maincontaineritem{order: 2;}
+.sidebarrighttitem{order: 3;}
+
+</style>
+
+
+
+
+</head>
+<body>
+
+    <header class="headercontainer"> <h1> HEADER Sample Flexbox example</h1>   </header>
+    <div class="Maincontainer"> 
+    <section class="Maincontaineritem"> 
+       
+    <article> 
+    <h2> First Article</h2>
+    <p> Tacos actually micro-dosing pour over semoitics banjo chicharrones retro fanny </p>
+    </article>
+    <article>
+        <h2> Second article</h2>
+        <p>Tacos actuall micro-dosing pour over semoitics banjo chicharrones retro fanny,A taco is a traditional Mexican food consisting of a small hand-sized corn- or wheat-based tortilla topped with a filling. The tortilla is then folded around the filling and eaten by hand.
+        A taco can be made with a variety of fillings, including beef, pork, chicken, seafood, beans, vegetables, and cheese,</p>
+    </article>
+      <article>
+        <h2>third Article</h2>
+        <p>Tacos actuall micro-dosing pour over semoitics banjo chicharrones retro fanny,A taco is a traditional Mexican food consisting of a small hand-sized corn- or wheat-based tortilla topped with a filling. The tortilla is then folded around the filling and eaten by hand.
+            A taco can be made with a variety of fillings, including beef  Sauces can also be added to tacos ranging from salsa to hot sauces like Tapatío. 
+            People use many different combinations of foods to build the taco, so it is very versatile.
+            Tacos are world popular, but especially so in Mexico, China and the United States</p>
+      </article>
+    
+    </section>
+   
+    <sideBar class="sidebaritem sidebarleftitem"><div class="center">left side bar</sideBar>
+    <sideBar class="sidebaritem sidebarrightitem"><div class="center">right side bar</sideBar>
+    </div>
+    <footer class="footercontainer">Footer</footer>
+</body>
+</html> 
