@@ -123,6 +123,15 @@ error-output{
         else textError.textContent="Name is incorrect";
 
     });
+    
+       const pwd=document.querySelector('#pwd');
+      const pwdError=document.querySelector('.pwd-error')
+      pwd.addEventListener('input', function() {
+        let pwdRegex = RegExp('(?=.*[A-Z])(?=.*[0-9])(?=.*[#?!@$%^&*-])[0-9a-zA-Z#?!@$%^&*-]{8,}');
+        if (pwdRegex.test(pwd.value))
+        pwdError.textContent="";
+        else pwdError.textContent="Password does not match with requirment";
+      });
 
     const tele= document.querySelector('#tel');
       const teleError = document.querySelector('.tel-error');
